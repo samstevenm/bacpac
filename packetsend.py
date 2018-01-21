@@ -16,7 +16,7 @@ def main():
 	parser.add_argument('-a', '--ip-address', help='IP Address (default 192.168.3.1)', default='192.168.3.1')
 	parser.add_argument('-b', '--bacnet-port', help='BACnet port (default 47808)', type=int, default=47808)
 	
-	parser.add_argument('-i', '--instance-id', help='The Instance ID', type=int, required=True)
+	parser.add_argument('-i', '--instance-id', help='The BACnet Instance ID', type=int, required=True)
 	parser.add_argument('-n', '--network-number', help='BACnet network-number (default 1)', type=int, default=1)
 	parser.add_argument('-c', '--property-code', help='BACnetPropertyCode (default 85)', type=int, default=85)
 	parser.add_argument('-p', '--present-value', help='Present value to Send', type=int, required=True)
